@@ -3,21 +3,25 @@ window.datosReales = {
     "Amazonas": [
         {
             "nombre": "Mónica Karina Bocanegra Pantoja",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Monica Karina Bocanegra Pantoja.png"
         },
         {
             "nombre": "Orlando Rayo Acosta",
-            "partido": "Coalición La Voz Del Amazonas"
+            "partido": "Coalición La Voz Del Amazonas",
+            "foto_path": "fotos_extraidas_representantes/Orlando Rayo Acosta.png"
         }
     ],
     "Antioquia": [
         {
             "nombre": "Camilo Andrés Gómez Mosquera",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Camilo Andres Gomez Mosquera.png"
         },
         {
             "nombre": "Diver Ney Franco Tejada",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Diver Ney Franco Tejada.png"
         },
         {
             "nombre": "Jaime Alonso Cano Martínez",
@@ -25,31 +29,38 @@ window.datosReales = {
         },
         {
             "nombre": "Luis Miguel López Aristizábal",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Luis Miguel Lopez Aristizabal.png"
         },
         {
             "nombre": "Andrés Felipe Guerra Hoyos",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Andres Felipe Guerra Hoyos.png"
         },
         {
             "nombre": "José Gregorio Orjuela Pérez",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Jose Gregorio Orjuela Perez.png"
         },
         {
             "nombre": "Melissa Orrego Eusse",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Melissa Orrego Eusse.png"
         },
         {
             "nombre": "Óscar Darío Pérez Pineda",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Oscar Dario Perez Pineda.png"
         },
         {
             "nombre": "Ana Ligia Mora Martínez",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Ana Ligia Mora Martinez.png"
         },
         {
             "nombre": "Juan David Zuluaga Zuluaga",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Juan David Zuluaga Zuluaga.png"
         },
         {
             "nombre": "Jhon Jairo Berrío López",
@@ -61,15 +72,18 @@ window.datosReales = {
         },
         {
             "nombre": "Simón Molina Gómez",
-            "partido": "Creemos"
+            "partido": "Creemos",
+            "foto_path": "fotos_extraidas_representantes/Simon Molina Gomez.png"
         },
         {
             "nombre": "Nataly Vélez Lopera",
-            "partido": "Coalición Cr-Lau-Msn-Oxi"
+            "partido": "Coalición Cr-Lau-Msn-Oxi",
+            "foto_path": "fotos_extraidas_representantes/Nataly Velez Lopera.png"
         },
         {
             "nombre": "Hernán Muriel Pérez",
-            "partido": "Movimiento Político Pacto Histórico"
+            "partido": "Movimiento Político Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Hernan Muriel Perez.png"
         },
         {
             "nombre": "Luz Verónica Estrada Holguin",
@@ -77,13 +91,15 @@ window.datosReales = {
         },
         {
             "nombre": "David Alejandro Toro Ramírez",
-            "partido": "Movimiento Politico Pacto Histórico"
+            "partido": "Movimiento Politico Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/David Alejandro Toro Ramirez.png"
         }
     ],
     "Arauca": [
         {
             "nombre": "Germán Rogelio Rozo Anís",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/German Rogelio Rozo Anis.png"
         },
         {
             "nombre": "Manuel Alexander Pérez Rueda",
@@ -93,11 +109,13 @@ window.datosReales = {
     "Atlántico": [
         {
             "nombre": "Jezmi Lizeth Barraza Arraut",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Jezmi Lizeth Barraza Arraut.png"
         },
         {
             "nombre": "César Antonio Barrera Vergara",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Cesar Antonio Barrera Vergara.png"
         },
         {
             "nombre": "Estefanel Gutiérrez Pérez",
@@ -105,33 +123,40 @@ window.datosReales = {
         },
         {
             "nombre": "Welfran Junior Mendoza Torres",
-            "partido": "Partido Cambio Radical"
+            "partido": "Partido Cambio Radical",
+            "foto_path": "fotos_extraidas_representantes/Welfran Junior Mendoza Torres.png"
         },
         {
             "nombre": "Samir Eduardo Radi Chemas",
-            "partido": "Partido Cambio Radical"
+            "partido": "Partido Cambio Radical",
+            "foto_path": "fotos_extraidas_representantes/Samir Eduardo Radi Chemas.png"
         },
         {
             "nombre": "Jaime Arturo Santamaría Acosta",
-            "partido": "Movimiento Político Pacto Histórico"
+            "partido": "Movimiento Político Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Jaime Arturo Santamaria Acosta.png"
         },
         {
             "nombre": "Andrea Camila Vargas De La Hoz",
-            "partido": "Movimiento Político Pacto Histórico"
+            "partido": "Movimiento Político Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Andrea Camila Vargas De la Hoz.png"
         }
     ],
     "Bogotá": [
         {
             "nombre": "Bleidy Del Carmen Pérez Ballestas",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Bleidy del Carmen Perez Ballestas.png"
         },
         {
             "nombre": "Catherine Juvinao Clavijo",
-            "partido": "Partido Alianza Verde"
+            "partido": "Partido Alianza Verde",
+            "foto_path": "fotos_extraidas_representantes/Catherine Juvinao Clavijo.png"
         },
         {
             "nombre": "Mauricio Andrés Toro Orjuela",
-            "partido": "Partido Alianza Verde"
+            "partido": "Partido Alianza Verde",
+            "foto_path": "fotos_extraidas_representantes/Mauricio Andres Toro Orjuela.png"
         },
         {
             "nombre": "Daniel Felipe Briceño Montes",
@@ -139,7 +164,8 @@ window.datosReales = {
         },
         {
             "nombre": "José Jaime Uscátegui Pastrana",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Jose  Jaime Uscategui Pastrana.png"
         },
         {
             "nombre": "David Gerardo Cote Rodríguez",
@@ -155,7 +181,8 @@ window.datosReales = {
         },
         {
             "nombre": "Luz Marina Gordillo Salinas",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Luz Marina Gordillo Salinas.png"
         },
         {
             "nombre": "Carol Stefanny Borda Acevedo",
@@ -167,7 +194,8 @@ window.datosReales = {
         },
         {
             "nombre": "Laura Daniela Beltrán Palomares",
-            "partido": "Movimiento Político Pacto Histórico"
+            "partido": "Movimiento Político Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Laura Daniela Beltran Palomares.png"
         },
         {
             "nombre": "María Del Mar Pizarro García",
@@ -183,7 +211,8 @@ window.datosReales = {
         },
         {
             "nombre": "Claudia Teresa Romero Nader",
-            "partido": "Movimiento Político Pacto Histórico"
+            "partido": "Movimiento Político Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Claudia Teresa Romero Nader.png"
         },
         {
             "nombre": "Jairo León Vargas",
@@ -191,51 +220,62 @@ window.datosReales = {
         },
         {
             "nombre": "Gabriel Becerra Yáñez",
-            "partido": "Movimiento Político Pacto Histórico"
+            "partido": "Movimiento Político Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Gabriel Becerra Yanez.png"
         }
     ],
     "Bolívar": [
         {
             "nombre": "Yolanda Wong Baldiris",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Yolanda Wong Baldiris.png"
         },
         {
             "nombre": "María Camila Salas Salas",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Maria Camila Salas Salas.png"
         },
         {
             "nombre": "Juliana Aray Franco",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Juliana Aray Franco.png"
         },
         {
             "nombre": "Andrés Guillermo Montes Celedón",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Andres Guillermo Montes Celedon.png"
         },
         {
             "nombre": "José Ricardo Ardila Pinedo",
-            "partido": "Coalición Centro Democrático - Mira"
+            "partido": "Coalición Centro Democrático - Mira",
+            "foto_path": "fotos_extraidas_representantes/Jose Ricardo Ardila Pinedo.png"
         },
         {
             "nombre": "Amaury Julio Pérez",
-            "partido": "Coalición Pacto Histórico Bolívar"
+            "partido": "Coalición Pacto Histórico Bolívar",
+            "foto_path": "fotos_extraidas_representantes/Amaury Julio Perez.png"
         }
     ],
     "Boyacá": [
         {
             "nombre": "Héctor David Chaparro Chaparro",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Hector David Chaparro Chaparro.png"
         },
         {
             "nombre": "Yamit Noé Hurtado Neira",
-            "partido": "Partido Alianza Verde"
+            "partido": "Partido Alianza Verde",
+            "foto_path": "fotos_extraidas_representantes/Yamit Noe Hurtado Neira.png"
         },
         {
             "nombre": "Jaime Raúl Salamanca Torres",
-            "partido": "Partido Alianza Verde"
+            "partido": "Partido Alianza Verde",
+            "foto_path": "fotos_extraidas_representantes/Jaime Raul Salamanca Torres.png"
         },
         {
             "nombre": "Eduar Alexis Triana Rincón",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Eduar Alexis Triana Rincon.png"
         },
         {
             "nombre": "José Luis Bohórquez López",
@@ -249,15 +289,18 @@ window.datosReales = {
     "Caldas": [
         {
             "nombre": "José Octavio Cardona León",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Jose Octavio Cardona Leon.png"
         },
         {
             "nombre": "Juan Manuel Londoño Jaramillo",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Juan Manuel Londono Jaramillo.png"
         },
         {
             "nombre": "Manuel Orlando Correa Bedoya",
-            "partido": "Partido Alianza Social Independiente - ASI"
+            "partido": "Partido Alianza Social Independiente - ASI",
+            "foto_path": "fotos_extraidas_representantes/Manuel Orlando Correa Bedoya.png"
         },
         {
             "nombre": "Mateo Hidalgo Montoya",
@@ -265,17 +308,20 @@ window.datosReales = {
         },
         {
             "nombre": "Santiago Osorio Marín",
-            "partido": "Coalición Pacto Histórico Alianza Verde"
+            "partido": "Coalición Pacto Histórico Alianza Verde",
+            "foto_path": "fotos_extraidas_representantes/Santiago Osorio Marin.png"
         }
     ],
     "Caquetá": [
         {
             "nombre": "Leonardo Ramón Ramírez",
-            "partido": "Coalición Revive Caquetá 2.0"
+            "partido": "Coalición Revive Caquetá 2.0",
+            "foto_path": "fotos_extraidas_representantes/Leonardo Ramon Ramirez.png"
         },
         {
             "nombre": "Juan Pablo Duque González",
-            "partido": "Coalición Caquetá"
+            "partido": "Coalición Caquetá",
+            "foto_path": "fotos_extraidas_representantes/Juan Pablo Duque Gonzalez.png"
         }
     ],
     "Casanare": [
@@ -285,17 +331,20 @@ window.datosReales = {
         },
         {
             "nombre": "Diego Fernando García Alfonso",
-            "partido": "Coalición Alianza por Casanare"
+            "partido": "Coalición Alianza por Casanare",
+            "foto_path": "fotos_extraidas_representantes/Diego Fernando Garcia Alfonso.png"
         }
     ],
     "Cauca": [
         {
             "nombre": "Édgar Gómez Castillo",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Edgar Gomez Castillo.png"
         },
         {
             "nombre": "Jorge Hernán Bastidas Rosero",
-            "partido": "Movimiento Politico Pacto Histórico"
+            "partido": "Movimiento Politico Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Jorge Hernan Bastidas Rosero.png"
         },
         {
             "nombre": "Luz Miryan Moncayo",
@@ -303,25 +352,30 @@ window.datosReales = {
         },
         {
             "nombre": "Víctor Andrés Armero Hernández",
-            "partido": "Coalición Fuerza Cauca"
+            "partido": "Coalición Fuerza Cauca",
+            "foto_path": "fotos_extraidas_representantes/Victor Andres Armero Hernandez.png"
         }
     ],
     "Cesar": [
         {
             "nombre": "Mello Castro González",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Mello Castro Gonzalez.png"
         },
         {
             "nombre": "Alfredo Ape Cuello Baute",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Alfredo Ape Cuello Baute.png"
         },
         {
             "nombre": "Carlos Gumercindo De La Peña Durán",
-            "partido": "Partido De La Unión Por La Gente - Partido De La U"
+            "partido": "Partido De La Unión Por La Gente - Partido De La U",
+            "foto_path": "fotos_extraidas_representantes/Carlos Gumercindo De la Pena Duran.png"
         },
         {
             "nombre": "Alexandra Pineda Ortiz",
-            "partido": "Coalición Pacto Histórico Cesar"
+            "partido": "Coalición Pacto Histórico Cesar",
+            "foto_path": "fotos_extraidas_representantes/Alexandra Pineda Ortiz.png"
         }
     ],
     "Córdoba": [
@@ -335,7 +389,8 @@ window.datosReales = {
         },
         {
             "nombre": "Juan David Rangel Yanez",
-            "partido": "Partido Cambio Radical"
+            "partido": "Partido Cambio Radical",
+            "foto_path": "fotos_extraidas_representantes/Juan David Rangel Yanez.png"
         },
         {
             "nombre": "Martha Isabel Ruiz Solera",
@@ -343,7 +398,8 @@ window.datosReales = {
         },
         {
             "nombre": "Luis Fernando Ballesteros Meza",
-            "partido": "Coalición Pr1Mero Córdoba"
+            "partido": "Coalición Pr1Mero Córdoba",
+            "foto_path": "fotos_extraidas_representantes/Luis Fernando ballesteros.png"
         },
         {
             "nombre": "José Luis Bohórquez López",
@@ -353,7 +409,8 @@ window.datosReales = {
     "Guainía": [
         {
             "nombre": "Carlos Alberto Cuenca Chaux",
-            "partido": "Partido Cambio Radical"
+            "partido": "Partido Cambio Radical",
+            "foto_path": "fotos_extraidas_representantes/Carlos Alberto Cuenca Chaux.png"
         },
         {
             "nombre": "Jhonn Alexander Molina Betancur",
@@ -363,49 +420,59 @@ window.datosReales = {
     "Guaviare": [
         {
             "nombre": "Alexander Harley Bermúdez Lasso",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Alexander Harley Bermudez Lasso.png"
         },
         {
             "nombre": "Jorge Alexander Quevedo Herrera",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Jorge Alexander Quevedo Herrera.png"
         }
     ],
     "Huila": [
         {
             "nombre": "Flora Perdomo Andrade",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Flora Perdomo Andrade.png"
         },
         {
             "nombre": "Lucy Mireya Bravo Obando",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Lucy Mireya Bravo Obando.png"
         },
         {
             "nombre": "Julio César Triana Quintero",
-            "partido": "Partido Cambio Radical"
+            "partido": "Partido Cambio Radical",
+            "foto_path": "fotos_extraidas_representantes/Julio Cesar Triana Quintero.png"
         },
         {
             "nombre": "Lourdes Paola Mateus Serrano",
-            "partido": "Coalición Pacto Histórico Huila"
+            "partido": "Coalición Pacto Histórico Huila",
+            "foto_path": "fotos_extraidas_representantes/Lourdes Paola Mateus Serrano.png"
         }
     ],
     "La Guajira": [
         {
             "nombre": "Juan Loreto Gómez Soto",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Juan Loreto Gomez Soto.png"
         },
         {
             "nombre": "Jorge Armando Figueroa Angarita",
-            "partido": "Partido De La Unión Por La Gente - Partido De La U"
+            "partido": "Partido De La Unión Por La Gente - Partido De La U",
+            "foto_path": "fotos_extraidas_representantes/Jorge Armando Figueroa Angarita.png"
         }
     ],
     "Magdalena": [
         {
             "nombre": "Kelyn Johana González Duarte",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Kelyn Johana Gonzalez Duarte.png"
         },
         {
             "nombre": "Franklin Del Cristo Lozano De La Ossa",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Franklin Del Cristo Lozano de la Ossa.png"
         },
         {
             "nombre": "Chadan Francisco Rosado Taylor",
@@ -413,17 +480,20 @@ window.datosReales = {
         },
         {
             "nombre": "Elizabeth Sabina Molina Campo",
-            "partido": "Coalición Demócrata Amplia Por La Paz"
+            "partido": "Coalición Demócrata Amplia Por La Paz",
+            "foto_path": "fotos_extraidas_representantes/Elizabeth Sabina Molina Campo.png"
         },
         {
             "nombre": "José Felipe Hernández Polo",
-            "partido": "Coalición Pacto Histórico Magdalena"
+            "partido": "Coalición Pacto Histórico Magdalena",
+            "foto_path": "fotos_extraidas_representantes/Jose Felipe Hernandez Polo.png"
         }
     ],
     "Meta": [
         {
             "nombre": "Milton Virgilio Carreño Sánchez",
-            "partido": "Partido De La Unión Por La Gente - Partido De La U"
+            "partido": "Partido De La Unión Por La Gente - Partido De La U",
+            "foto_path": "fotos_extraidas_representantes/Milton Virgilio Carreno Sanchez.png"
         },
         {
             "nombre": "Daruin Castellanos Romero",
@@ -431,13 +501,15 @@ window.datosReales = {
         },
         {
             "nombre": "María del Carmen Mayusa Cruz",
-            "partido": "Coalición Pacto Histórico - Frente Amplio"
+            "partido": "Coalición Pacto Histórico - Frente Amplio",
+            "foto_path": "fotos_extraidas_representantes/Maria del Carmen Mayusa Cruz.png"
         }
     ],
     "Nariño": [
         {
             "nombre": "Carlos Alberto Pantoja Cortés",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Carlos Alberto Pantoja Cortes.png"
         },
         {
             "nombre": "Erick Adrián Velasco Burbano",
@@ -453,17 +525,20 @@ window.datosReales = {
         },
         {
             "nombre": "Alejandra Gabriela Abasolo Gómez",
-            "partido": "Avancemos Nariño"
+            "partido": "Avancemos Nariño",
+            "foto_path": "fotos_extraidas_representantes/Alejandra Gabriela Abasolo Gomez.png"
         }
     ],
     "Norte De Santander": [
         {
             "nombre": "Luis Ariel Francisco Rodríguez Beltrán",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Luis Ariel Francisco Rodriguez.png"
         },
         {
             "nombre": "José Luis Duarte Contreras",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Jose Luis Duarte Contreras.png"
         },
         {
             "nombre": "Eimy Julieth Suárez González",
@@ -471,11 +546,13 @@ window.datosReales = {
         },
         {
             "nombre": "Diana Carolina Riveros Páez",
-            "partido": "Partido De La Unión Por La Gente - Partido De La U"
+            "partido": "Partido De La Unión Por La Gente - Partido De La U",
+            "foto_path": "fotos_extraidas_representantes/Diana Carolina Riveros Paez.png"
         },
         {
             "nombre": "Juan Felipe Corzo Álvarez",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Juan Felipe Corzo Alvarez.png"
         }
     ],
     "Putumayo": [
@@ -499,13 +576,15 @@ window.datosReales = {
         },
         {
             "nombre": "Miguel Ángel Grisales Suárez",
-            "partido": "Coalición Pacto Histórico Quindío"
+            "partido": "Coalición Pacto Histórico Quindío",
+            "foto_path": "fotos_extraidas_representantes/Miguel Angel Grisales Suarez.png"
         }
     ],
     "Risaralda": [
         {
             "nombre": "José Fredy Arias Herrera",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Jose Fredy Arias Herrera.png"
         },
         {
             "nombre": "José Durgues Espinosa Martínez",
@@ -517,13 +596,15 @@ window.datosReales = {
         },
         {
             "nombre": "Fernando Arias Cardona",
-            "partido": "Coalición Pacto Por Risaralda"
+            "partido": "Coalición Pacto Por Risaralda",
+            "foto_path": "fotos_extraidas_representantes/Fernando Arias Cardona.png"
         }
     ],
     "San Andrés Y Providencia": [
         {
             "nombre": "Elizabeth Jay-Pang Díaz",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Jay Pang.png"
         },
         {
             "nombre": "Jorge Méndez Hernández",
@@ -533,11 +614,13 @@ window.datosReales = {
     "Santander": [
         {
             "nombre": "Mario José Carvajal Jaimes",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Mario Jose Carvajal Jaimes.png"
         },
         {
             "nombre": "Guillermo León Blanco Valencia",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Guillermo Leon Blanco Valencia.png"
         },
         {
             "nombre": "Diego Fran Ariza Pérez",
@@ -545,15 +628,18 @@ window.datosReales = {
         },
         {
             "nombre": "Jonathan Eduardo Pineda López",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Jonathan Eduardo Pineda Lopez.png"
         },
         {
             "nombre": "Miguel Ángel Pinto Rueda",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Miguel Angel Pinto Rueda.png"
         },
         {
             "nombre": "Camilo Alfonso Torres Prada",
-            "partido": "Coalición Pacto Histórico - Santander"
+            "partido": "Coalición Pacto Histórico - Santander",
+            "foto_path": "fotos_extraidas_representantes/Camilo Alfonso Torres Prada.png"
         },
         {
             "nombre": "Yolanda Silva Romero",
@@ -563,37 +649,45 @@ window.datosReales = {
     "Sucre": [
         {
             "nombre": "Pedro Antonio Paternina Gulfo",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Pedro Antonio Paternina Gulfo.png"
         },
         {
             "nombre": "Milene Jarava Díaz",
-            "partido": "Partido De La Unión Por La Gente - Partido De La U"
+            "partido": "Partido De La Unión Por La Gente - Partido De La U",
+            "foto_path": "fotos_extraidas_representantes/Milene Jarava Diaz.png"
         },
         {
             "nombre": "Alejandro De La Ossa Lacayo",
-            "partido": "Partido Político La Fuerza"
+            "partido": "Partido Político La Fuerza",
+            "foto_path": "fotos_extraidas_representantes/Alejandro De la Ossa Lacayo.png"
         }
     ],
     "Tolima": [
         {
             "nombre": "Guillermo Ignacio Alvira Acosta",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Guillermo Ignacio Alvira Acosta.png"
         },
         {
             "nombre": "Delcy Esperanza Isaza Buenaventura",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Delcy Esperanza Isaza Buenaventura.png"
         },
         {
             "nombre": "José Alejandro Martínez Sánchez",
-            "partido": "Partido Conservador Colombiano"
+            "partido": "Partido Conservador Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Jose Alejandro Martinez Sanchez.png"
         },
         {
             "nombre": "Carlos Edward Osorio Aguiar",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Carlos Edward Osorio Aguiar.png"
         },
         {
             "nombre": "Marco Emilio Hincapié Ramírez",
-            "partido": "Coalición Pacto Verde Por El Tolima"
+            "partido": "Coalición Pacto Verde Por El Tolima",
+            "foto_path": "fotos_extraidas_representantes/Marco Emilio Hincapie.png"
         },
         {
             "nombre": "Renso Alexander García Parra",
@@ -603,27 +697,33 @@ window.datosReales = {
     "Valle Del Cauca": [
         {
             "nombre": "Víctor Manuel Salcedo Guerrero",
-            "partido": "Partido De La Unión Por La Gente - Partido De La U"
+            "partido": "Partido De La Unión Por La Gente - Partido De La U",
+            "foto_path": "fotos_extraidas_representantes/Victor Manuel Salcedo Guerrero.png"
         },
         {
             "nombre": "Luis Alfonso Chavez Rivera",
-            "partido": "Partido De La Unión Por La Gente - Partido De La U"
+            "partido": "Partido De La Unión Por La Gente - Partido De La U",
+            "foto_path": "fotos_extraidas_representantes/Luis Alfonso Chavez Rivera.png"
         },
         {
             "nombre": "Santiago Castro Gómez",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Santiago Castro Gomez.png"
         },
         {
             "nombre": "Jaime Ignacio Arizabaleta Fajardo",
-            "partido": "Partido Centro Democrático"
+            "partido": "Partido Centro Democrático",
+            "foto_path": "fotos_extraidas_representantes/Jaime Ignacio Arizabaleta Fajardo.png"
         },
         {
             "nombre": "Juan Pablo Rojas Suárez",
-            "partido": "Coalición Ahora Colombia"
+            "partido": "Coalición Ahora Colombia",
+            "foto_path": "fotos_extraidas_representantes/Juan Pablo Rojas Suarez.png"
         },
         {
             "nombre": "Hernando González",
-            "partido": "Coalición CR-CJL-Liga De Gobernantes"
+            "partido": "Coalición CR-CJL-Liga De Gobernantes",
+            "foto_path": "fotos_extraidas_representantes/Hernando Gonzalez.png"
         },
         {
             "nombre": "David Pinilla Calero",
@@ -631,19 +731,23 @@ window.datosReales = {
         },
         {
             "nombre": "Alfredo Mondragón Garzón",
-            "partido": "Movimiento Politico Pacto Histórico"
+            "partido": "Movimiento Politico Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Alfredo Mondragon Garzon.png"
         },
         {
             "nombre": "Ana Leidy Erazo Ruiz",
-            "partido": "Movimiento Político Pacto Histórico"
+            "partido": "Movimiento Político Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Ana Leidy Erazo Ruiz.png"
         },
         {
             "nombre": "Jorge Augusto Palacio Garzón",
-            "partido": "Movimiento Político Pacto Histórico"
+            "partido": "Movimiento Político Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Jorge Augusto Palacio Garzon.png"
         },
         {
             "nombre": "Laura Isabel Vera Zapata",
-            "partido": "Movimiento Político Pacto Histórico"
+            "partido": "Movimiento Político Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Laura Isabel Vera Zapata.png"
         },
         {
             "nombre": "Carlos Eduardo Arizabaleta Corral",
@@ -651,13 +755,15 @@ window.datosReales = {
         },
         {
             "nombre": "Paola Andrea Quiñones D'Haro",
-            "partido": "Movimiento Político Pacto Histórico"
+            "partido": "Movimiento Político Pacto Histórico",
+            "foto_path": "fotos_extraidas_representantes/Paola Andrea Quinones DHaro.png"
         }
     ],
     "Vaupés": [
         {
             "nombre": "Óscar Fabián Espinosa Torres",
-            "partido": "Partido Alianza Social Independiente - ASI"
+            "partido": "Partido Alianza Social Independiente - ASI",
+            "foto_path": "fotos_extraidas_representantes/Oscar Fabian Espinosa.png"
         },
         {
             "nombre": "Camilo Esteban Ávila Morales",
@@ -667,7 +773,8 @@ window.datosReales = {
     "Vichada": [
         {
             "nombre": "Luis Carlos Álvarez Morales",
-            "partido": "Partido Liberal Colombiano"
+            "partido": "Partido Liberal Colombiano",
+            "foto_path": "fotos_extraidas_representantes/Luis Carlos Alvarez.png"
         },
         {
             "nombre": "Juan David Londoño Arango",
@@ -1798,7 +1905,7 @@ function obtenerPoliticos(departamento) {
                 nombre: rep.nombre,
                 partido: rep.partido,
                 votos: "N/A",
-                foto_path: "fotos_politicos/rep_" + (index + 1) + "_" + depKey + "/foto.svg"
+                foto_path: rep.foto_path || ("fotos_politicos/rep_" + (index + 1) + "_" + depKey + "/foto.svg")
             };
         });
     } else {
