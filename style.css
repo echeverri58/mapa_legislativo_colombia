@@ -213,8 +213,8 @@ body, html {
     animation: fadeIn 0.3s ease;
 }
 
-.politico-detail.hidden {
-    display: none;
+.hidden {
+    display: none !important;
 }
 
 .back-btn {

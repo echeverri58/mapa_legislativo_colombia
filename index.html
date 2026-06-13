@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
     <!-- Título flotante elegante -->
@@ -48,7 +48,13 @@
                     <div class="card-info">
                         <h3 id="pol-nombre">Nombre</h3>
                         <p class="pol-partido"><i class="fa-solid fa-landmark"></i> <span id="pol-partido">Partido</span></p>
-                        <p class="pol-votos"><i class="fa-solid fa-check-to-slot"></i> <span id="pol-votos">0</span> votos</p>
+                        <p class="pol-votos" id="pol-votos-container"><i class="fa-solid fa-check-to-slot"></i> <span id="pol-votos">0</span> votos</p>
+                        
+                        <div id="pol-extra-info" style="display: none; margin-top: 10px; font-size: 0.9em; text-align: left;">
+                            <p><strong><i class="fa-solid fa-briefcase"></i> Profesión:</strong> <span id="pol-profesion"></span></p>
+                            <p><strong><i class="fa-solid fa-address-card"></i> Estatus:</strong> <span id="pol-estatus"></span></p>
+                            <p style="margin-top: 8px;"><strong><i class="fa-solid fa-book"></i> Trayectoria:</strong> <span id="pol-trayectoria"></span></p>
+                        </div>
                     </div>
                 </div>
             </div>

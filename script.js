@@ -57,7 +57,10 @@ closeBtn.addEventListener('click', () => {
 // Volver a la lista
 backBtn.addEventListener('click', () => {
     politicoDetail.classList.add('hidden');
+    politicoDetail.style.display = 'none';
+    
     politicosList.classList.remove('hidden');
+    politicosList.style.display = 'flex';
 });
 
 // Cambiar pestañas
@@ -69,7 +72,10 @@ tabBtns.forEach(btn => {
         
         // Volver a la lista y renderizar
         politicoDetail.classList.add('hidden');
+        politicoDetail.style.display = 'none';
+        
         politicosList.classList.remove('hidden');
+        politicosList.style.display = 'flex';
         renderizarLista();
     });
 });
@@ -99,11 +105,36 @@ function renderizarLista() {
 // Muestra la tarjeta de detalle de un político
 function mostrarDetalle(politico) {
     politicosList.classList.add('hidden');
+    politicosList.style.display = 'none'; // Forzar ocultado vía inline CSS
+    
     politicoDetail.classList.remove('hidden');
+    politicoDetail.style.display = 'block'; // Forzar mostrado vía inline CSS
+    
+    // Auto-scroll al inicio del panel para que la tarjeta sea visible inmediatamente
+    offcanvas.scrollTop = 0;
     
     document.getElementById('pol-nombre').textContent = politico.nombre;
     document.getElementById('pol-partido').textContent = politico.partido;
-    document.getElementById('pol-votos').textContent = politico.votos;
+    
+    // Si no es "N/A", mostrar votos, si no, ocultar
+    const votosContainer = document.getElementById('pol-votos-container');
+    if (politico.votos && politico.votos !== 'N/A') {
+        document.getElementById('pol-votos').textContent = politico.votos;
+        votosContainer.style.display = 'block';
+    } else {
+        votosContainer.style.display = 'none';
+    }
+    
+    // Datos adicionales para los senadores
+    const extraInfo = document.getElementById('pol-extra-info');
+    if (politico.profesion || politico.trayectoria || politico.estatus) {
+        document.getElementById('pol-profesion').textContent = politico.profesion || 'No registra';
+        document.getElementById('pol-estatus').textContent = politico.estatus || 'No registra';
+        document.getElementById('pol-trayectoria').textContent = politico.trayectoria || 'No registra';
+        extraInfo.style.display = 'block';
+    } else {
+        extraInfo.style.display = 'none';
+    }
     
     // Configurar foto
     const imgEl = document.getElementById('pol-foto');
@@ -128,11 +159,25 @@ function clickDepartamento(e) {
     // Obtener datos (usando la función del archivo datos_politicos.js)
     if (typeof obtenerPoliticos === 'function') {
         datosActuales = obtenerPoliticos(nombreDepto);
+        
+        // Actualizar el texto de las pestañas con las cantidades
+        const btnSenadores = document.querySelector('.tab-btn[data-tab="senadores"]');
+        const btnRepresentantes = document.querySelector('.tab-btn[data-tab="representantes"]');
+        
+        if (btnSenadores && datosActuales.senadores) {
+            btnSenadores.textContent = `Senadores (${datosActuales.senadores.length})`;
+        }
+        if (btnRepresentantes && datosActuales.representantes) {
+            btnRepresentantes.textContent = `Representantes (${datosActuales.representantes.length})`;
+        }
     }
     
     // Asegurar que volvemos a la vista de lista
     politicoDetail.classList.add('hidden');
+    politicoDetail.style.display = 'none';
+    
     politicosList.classList.remove('hidden');
+    politicosList.style.display = 'flex';
     
     renderizarLista();
     offcanvas.classList.add('open');
