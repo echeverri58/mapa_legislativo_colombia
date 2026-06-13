@@ -1815,7 +1815,7 @@ function obtenerPoliticos(departamento) {
     
     let sensReales = [];
     let depMatchSen = Object.keys(window.senadoresPorDepartamento).find(k => {
-        let excelDep = normalizar(k);
+        let excelDep = normalizar(k).replace(/_/g, ' ');
         return excelDep === depNormalizado || 
                (depNormalizado.includes("bogota") && excelDep.includes("bogota")) ||
                (depNormalizado.includes("san andres") && excelDep.includes("san andres")) ||
