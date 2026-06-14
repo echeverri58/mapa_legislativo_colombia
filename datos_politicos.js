@@ -1527,6 +1527,16 @@ window.senadoresPorDepartamento = {
     ],
     "atlantico": [
         {
+            "id": "senador_perfil_91",
+            "nombre": "Gonzalo Dimas Baute González",
+            "partido": "Cambio Radical",
+            "votos": "N/A",
+            "foto_path": "fotos_senadores/senador_perfil_91.jpeg",
+            "profesion": "Not in source",
+            "trayectoria": "Candidato con presencia política en el departamento del Atlántico.",
+            "estatus": "Candidato nuevo"
+        },
+        {
             "id": "senador_perfil_21",
             "nombre": "Orlando Miguel De la Hoz García",
             "partido": "Pacto Histórico",
@@ -1649,16 +1659,6 @@ window.senadoresPorDepartamento = {
             "profesion": "Administrador de empresas",
             "trayectoria": "Exalcalde y Senador (2018-2026). Nació en 1971.",
             "estatus": "Repite candidatura"
-        },
-        {
-            "id": "senador_perfil_91",
-            "nombre": "Gonzalo Dimas Baute González",
-            "partido": "Cambio Radical",
-            "votos": "N/A",
-            "foto_path": "fotos_senadores/senador_perfil_91.jpeg",
-            "profesion": "Not in source",
-            "trayectoria": "Candidato con presencia política en el departamento del Cesar.",
-            "estatus": "Candidato nuevo"
         }
     ],
     "cordoba": [
