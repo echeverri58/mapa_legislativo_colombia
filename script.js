@@ -80,6 +80,70 @@ tabBtns.forEach(btn => {
     });
 });
 
+function getLogoForPartido(partido) {
+    if (!partido) return null;
+    const p = partido.toLowerCase();
+    
+    if (p.includes('pacto histórico') || p.includes('pacto historico')) {
+        return 'Logos parditos/Pacto_historico.png';
+    }
+    if (p.includes('centro democrático') || p.includes('centro democratico')) {
+        return 'Logos parditos/Centro_Democrático.png';
+    }
+    if (p.includes('conservador')) {
+        return 'Logos parditos/Partido_Conservador_Colombiano.png';
+    }
+    if (p.includes('liberal') && !p.includes('nuevo liberalismo')) {
+        return 'Logos parditos/Partido_Liberal_Colombiano.png';
+    }
+    if (p.includes('cambio radical')) {
+        return 'Logos parditos/Cambio_Radical.png';
+    }
+    if (p.includes('partido de la u') || p === 'de la u') {
+        return 'Logos parditos/Logo_Partido_U_Colombia.png';
+    }
+    if (p.includes('salvación nacional') || p.includes('salvacion nacional')) {
+        return 'Logos parditos/Movimiento_de_Salvación_Nacional_2026.png';
+    }
+    if (p.includes('ahora colombia') || p.includes('nuevo liberalismo') || p.includes('dignidad y compromiso') || p.includes('mira')) {
+        return 'Logos parditos/Coalicion-Ahora-Mira-Nuevo-Liberalismo-Dignidad-y-compromiso.jpg';
+    }
+    if (p.includes('alianza por colombia') || p.includes('alianza por casanare') || p.includes('alianza verde')) {
+        return 'Logos parditos/Alianza_por_Colombia.png';
+    }
+    if (p.includes('aico')) {
+        return 'Logos parditos/AICO.png';
+    }
+    if (p.includes('creemos')) {
+        return 'Logos parditos/creemos.png';
+    }
+    if (p.includes('mais')) {
+        return 'Logos parditos/MAIS.png';
+    }
+    if (p.includes('minga por colombia')) {
+        return 'Logos parditos/Minga por Colombia.png';
+    }
+    if (p.includes('asi') || p.includes('alianza social independiente')) {
+        return 'Logos parditos/Alianza-social-independiente.png';
+    }
+    if (p.includes('la fuerza')) {
+        return 'Logos parditos/Partido_Fuerza_de_La_Paz.png';
+    }
+    if (p.includes('avancemos nariño') || p.includes('avancemos narino')) {
+        return 'Logos parditos/Avancemos-nariño.png';
+    }
+    if (p.includes('liga de gobernantes')) {
+        return 'Logos parditos/Liga de Gobernantes.png';
+    }
+    
+    // Fallback para cualquier otra coalición o la coalición Caquetá
+    if (p.includes('coalición') || p.includes('coalicion')) {
+        return 'Logos parditos/Coalicion Caqueta.png';
+    }
+    
+    return null;
+}
+
 // Renderiza la lista de políticos
 function renderizarLista() {
     politicosList.innerHTML = '';
@@ -92,7 +156,14 @@ function renderizarLista() {
     datosActuales[tabActual].forEach(politico => {
         const item = document.createElement('div');
         item.className = 'politico-item';
-        item.innerHTML = `<h4>${politico.nombre}</h4> <i class="fa-solid fa-chevron-right"></i>`;
+        
+        const logoUrl = getLogoForPartido(politico.partido);
+        let logoHtml = '';
+        if (logoUrl) {
+            logoHtml = `<img src="${logoUrl}" alt="Logo" class="logo-partido-small" />`;
+        }
+        
+        item.innerHTML = `<div class="politico-name-container">${logoHtml}<h4>${politico.nombre}</h4></div> <i class="fa-solid fa-chevron-right"></i>`;
         
         item.addEventListener('click', () => {
             mostrarDetalle(politico);

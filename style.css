@@ -204,6 +204,20 @@ body, html {
     color: #2c3e50;
 }
 
+.politico-name-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-partido-small {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
 .politico-item i {
     color: #bdc3c7;
 }
