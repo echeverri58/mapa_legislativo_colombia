@@ -81,7 +81,7 @@ window.datosReales = {
         {
             "nombre": "Nataly Vélez Lopera",
             "partido": "Coalición Cr-Lau-Msn-Oxi",
-            "foto_path": "fotos_extraidas_representantes/Nataly Velez Lopera.png"
+            "foto_path": "fotos_extraidas_representantes/Nataly Velez.png"
         },
         {
             "nombre": "Hernán Muriel Pérez",
