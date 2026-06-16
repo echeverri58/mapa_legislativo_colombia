@@ -419,6 +419,39 @@ body, html {
     to { opacity: 1; transform: translateX(0); }
 }
 
+/* --- ETIQUETAS DE DEPARTAMENTOS EN EL MAPA --- */
+.dpto-label-icon {
+    pointer-events: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.dpto-label-text {
+    font-size: 0.70rem;
+    font-weight: 800;
+    color: #2c3e50;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.8), -1px -1px 0px rgba(255,255,255,0.8), 1px -1px 0px rgba(255,255,255,0.8), -1px 1px 0px rgba(255,255,255,0.8);
+    text-align: center;
+    white-space: nowrap;
+    transform: translate(-50%, -50%); /* Centrado perfecto sobre el punto geográfico */
+    pointer-events: none;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    z-index: 400;
+}
+
+.dpto-label-text.small-dpto {
+    color: #e74c3c;
+    background: rgba(255,255,255,0.9);
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #e74c3c;
+    text-shadow: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 /* Responsividad para Celulares */
 @media (max-width: 768px) {
     .offcanvas {

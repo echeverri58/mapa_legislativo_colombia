@@ -293,6 +293,70 @@ geojsonLayer = L.geoJSON(colombiaGeoJSON, {
 // Centrar y ajustar el mapa exactamente a los límites de Colombia (responsive)
 map.fitBounds(geojsonLayer.getBounds());
 
+// Agregar nombres de los departamentos en el mapa
+function addLabels() {
+    const smallDeptsConfig = {
+        'ARCHIPIÉLAGO DE SAN ANDRÉS, PROVIDENCIA Y SANTA CATALINA': { offsetLat: 1.5, offsetLng: 2, name: "San Andrés" },
+        'QUINDIO': { offsetLat: 0, offsetLng: -2.5, name: "Quindío" },
+        'RISARALDA': { offsetLat: 0.8, offsetLng: -2.5, name: "Risaralda" },
+        'CALDAS': { offsetLat: 1.5, offsetLng: -2.2, name: "Caldas" },
+        'ATLÁNTICO': { offsetLat: 1.5, offsetLng: -1.5, name: "Atlántico" },
+        'SUCRE': { offsetLat: 1.5, offsetLng: -2.5, name: "Sucre" },
+        'BOGOTÁ, D.C.': { offsetLat: -0.5, offsetLng: 2.5, name: "Bogotá" }
+    };
+
+    geojsonLayer.eachLayer(layer => {
+        if (!layer.feature.properties || !layer.feature.properties.DPTO_CNMBR) return;
+        
+        let dptoName = layer.feature.properties.DPTO_CNMBR;
+        let bounds = layer.getBounds();
+        let center = bounds.getCenter();
+        let displayLatLng = center;
+        let displayName = dptoName;
+        
+        // Simplificar nombres muy largos para que quepan mejor
+        if (dptoName === 'VALLE DEL CAUCA') displayName = "Valle del<br>Cauca";
+        else if (dptoName === 'NORTE DE SANTANDER') displayName = "Norte de<br>Santander";
+        else if (dptoName === 'LA GUAJIRA') displayName = "La Guajira";
+        else if (dptoName === 'CUNDINAMARCA') displayName = "Cundinamarca";
+        else if (dptoName === 'ANTIOQUIA') displayName = "Antioquia";
+        // Si no es un caso especial, usar modo capitalizado simple
+        else displayName = dptoName.charAt(0) + dptoName.slice(1).toLowerCase();
+        
+        let isSmall = smallDeptsConfig[dptoName];
+        
+        if (isSmall) {
+            displayLatLng = L.latLng(center.lat + isSmall.offsetLat, center.lng + isSmall.offsetLng);
+            displayName = isSmall.name;
+            
+            // Dibujar conector
+            L.polyline([center, displayLatLng], {
+                color: '#2c3e50',
+                weight: 1.5,
+                dashArray: '4, 4',
+                opacity: 0.8,
+                interactive: false
+            }).addTo(map);
+        }
+        
+        // Crear el icono de texto
+        let icon = L.divIcon({
+            className: 'dpto-label-icon',
+            html: `<div class="dpto-label-text ${isSmall ? 'small-dpto' : ''}">${displayName}</div>`,
+            iconSize: [0, 0], // Tamaño cero, el css controlará la expansión y centrado
+            iconAnchor: [0, 0] // El centrado se hará con transform: translate(-50%, -50%)
+        });
+        
+        L.marker(displayLatLng, {
+            icon: icon,
+            interactive: false // Para no bloquear clics al polígono
+        }).addTo(map);
+    });
+}
+
+// Llamar la función
+addLabels();
+
 // Lógica para Rankings
 const btnSenado = document.getElementById('btn-ranking-senado');
 const btnCamara = document.getElementById('btn-ranking-camara');
