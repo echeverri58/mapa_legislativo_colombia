@@ -14,6 +14,23 @@
     <!-- Título flotante elegante -->
     <div class="map-title-container">
         <h1 class="map-title">MAPA LEGISLATIVO DE COLOMBIA</h1>
+        <div class="global-buttons-container">
+            <button id="btn-ranking-senado" class="global-btn"><i class="fa-solid fa-landmark"></i> Senado</button>
+            <button id="btn-ranking-camara" class="global-btn"><i class="fa-solid fa-users"></i> Cámara</button>
+        </div>
+    </div>
+
+    <!-- Ranking Panel -->
+    <div id="ranking-panel" class="ranking-panel hidden">
+        <div class="ranking-header">
+            <h2 id="ranking-title">Ranking Nacional</h2>
+            <button id="close-ranking-btn" class="close-btn" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="ranking-body">
+            <div id="ranking-list" class="ranking-list">
+                <!-- La lista de departamentos ordenados se inyectará aquí -->
+            </div>
+        </div>
     </div>
 
     <!-- Información del Creador -->

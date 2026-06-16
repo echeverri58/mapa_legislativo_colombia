@@ -2,19 +2,31 @@
 const map = L.map('map');
 
 // Agregar la capa de mapa base (OpenStreetMap)
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 18,
-    attribution: '© OpenStreetMap contributors'
-}).addTo(map);
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     maxZoom: 18,
+//     attribution: '© OpenStreetMap contributors'
+// }).addTo(map);
 
 // Estilo por defecto para los departamentos
 function style(feature) {
+    let weight = 2;
+    let color = '#2c3e50';
+    let fillColor = '#3498db';
+    let fillOpacity = 0.5;
+    
+    // Resaltar San Andrés
+    if (feature.properties && feature.properties.DPTO_CNMBR && feature.properties.DPTO_CNMBR.includes('SAN ANDR')) {
+        weight = 3;
+        color = '#e74c3c';
+        fillOpacity = 0.8;
+    }
+
     return {
-        fillColor: '#3498db',
-        weight: 1,
+        fillColor: fillColor,
+        weight: weight,
         opacity: 1,
-        color: 'white',
-        fillOpacity: 0.5
+        color: color,
+        fillOpacity: fillOpacity
     };
 }
 
@@ -280,3 +292,106 @@ geojsonLayer = L.geoJSON(colombiaGeoJSON, {
 
 // Centrar y ajustar el mapa exactamente a los límites de Colombia (responsive)
 map.fitBounds(geojsonLayer.getBounds());
+
+// Lógica para Rankings
+const btnSenado = document.getElementById('btn-ranking-senado');
+const btnCamara = document.getElementById('btn-ranking-camara');
+const rankingPanel = document.getElementById('ranking-panel');
+const btnCloseRanking = document.getElementById('close-ranking-btn');
+const rankingList = document.getElementById('ranking-list');
+const rankingTitle = document.getElementById('ranking-title');
+
+function mostrarRanking(tipo) {
+    rankingPanel.classList.remove('hidden');
+    rankingList.innerHTML = '';
+    
+    if (tipo === 'senado') {
+        rankingTitle.innerHTML = '<i class="fa-solid fa-landmark"></i> Ranking Senado';
+        btnSenado.classList.add('active');
+        btnCamara.classList.remove('active');
+    } else {
+        rankingTitle.innerHTML = '<i class="fa-solid fa-users"></i> Ranking Cámara';
+        btnCamara.classList.add('active');
+        btnSenado.classList.remove('active');
+    }
+
+    const conteos = [];
+    const normalizar = (texto) => texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    
+    geojsonLayer.eachLayer(layer => {
+        const nombreDepto = layer.feature.properties.DPTO_CNMBR;
+        const depNormalizado = normalizar(nombreDepto);
+        let cantidad = 0;
+        
+        if (tipo === 'senado') {
+            let depMatchSen = Object.keys(window.senadoresPorDepartamento || {}).find(k => {
+                let excelDep = normalizar(k).replace(/_/g, ' ');
+                return excelDep === depNormalizado || 
+                       (depNormalizado.includes("bogota") && excelDep.includes("bogota")) ||
+                       (depNormalizado.includes("san andres") && excelDep.includes("san andres")) ||
+                       (depNormalizado.includes("valle") && excelDep.includes("valle"));
+            });
+            if (depMatchSen && window.senadoresPorDepartamento[depMatchSen]) {
+                // Contar todos los senadores de este departamento
+                cantidad = window.senadoresPorDepartamento[depMatchSen].filter(s => !s.nombre.includes('No hay datos')).length;
+            }
+        } else {
+            let depMatch = Object.keys(window.datosReales || {}).find(k => {
+                let excelDep = normalizar(k);
+                return excelDep === depNormalizado || 
+                       (depNormalizado.includes("bogota") && excelDep.includes("bogota")) ||
+                       (depNormalizado.includes("san andres") && excelDep.includes("san andres")) ||
+                       (depNormalizado.includes("valle") && excelDep.includes("valle"));
+            });
+            if (depMatch && window.datosReales[depMatch]) {
+                // Contar representantes
+                cantidad = window.datosReales[depMatch].filter(r => !r.nombre.includes('No hay datos')).length;
+            }
+        }
+        
+        // Agregar siempre, incluso si es 0, para mostrar todos los departamentos
+        conteos.push({ depto: nombreDepto, cantidad: cantidad, layer: layer });
+    });
+
+    // Ordenar de mayor a menor cantidad
+    // Si hay empate en cantidad, ordenar alfabéticamente por nombre de departamento para mejor presentación
+    conteos.sort((a, b) => {
+        if (b.cantidad !== a.cantidad) {
+            return b.cantidad - a.cantidad;
+        }
+        return a.depto.localeCompare(b.depto);
+    });
+
+    if (conteos.length === 0) {
+        rankingList.innerHTML = '<p style="padding:15px; color:#7f8c8d;">No hay datos para mostrar.</p>';
+        return;
+    }
+
+    conteos.forEach((item, index) => {
+        const div = document.createElement('div');
+        div.className = 'ranking-item';
+        div.innerHTML = `
+            <div class="ranking-item-name"><span style="color:#7f8c8d; font-weight:normal; margin-right:5px;">${index + 1}.</span> ${item.depto}</div>
+            <div class="ranking-item-count">${item.cantidad}</div>
+        `;
+        
+        // Al hacer clic, simular clic en el mapa
+        div.addEventListener('click', () => {
+            map.fitBounds(item.layer.getBounds(), { padding: [50, 50] });
+            item.layer.fire('click');
+        });
+        
+        rankingList.appendChild(div);
+    });
+}
+
+if (btnSenado) btnSenado.addEventListener('click', () => mostrarRanking('senado'));
+if (btnCamara) btnCamara.addEventListener('click', () => mostrarRanking('camara'));
+
+if (btnCloseRanking) {
+    btnCloseRanking.addEventListener('click', () => {
+        rankingPanel.classList.add('hidden');
+        btnSenado.classList.remove('active');
+        btnCamara.classList.remove('active');
+    });
+}
